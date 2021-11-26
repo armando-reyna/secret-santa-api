@@ -11,7 +11,7 @@ spring:
     cc: armando@airsoftware.com.mx,eduardo@airsoftware.com.mx
     templates: "classpath:templates/mail/"
     username: donotreply@airsoftware.solutions
-    password: 41rs0ftw4r3#s0lut10n
+    password: 41rs0ftw4r3#s0lut10n#2021
     port: 587
     host: smtp.1and1.com
     properties:
