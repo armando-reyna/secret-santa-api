@@ -79,7 +79,7 @@ public class CustomMailSender {
 
             newEventTemplate.setAttribute("message", message.toString());
 
-            sendMail(secretSantaGroup.getEmail(), "Intercambio", newEventTemplate.toString());
+            sendMail(secretSantaGroup.getEmail(), "Prueba Intercambio", newEventTemplate.toString());
         } catch (final Exception e) {
             log.error("The email send out failed.", e);
         }
