@@ -73,7 +73,7 @@ public class GroupService {
                 if (secretSantaPerson.getGivesTo() == null) {
                     throw new EmptyGiveToException("Give to is empty.");
                 }
-                log.info("\t{} gives to {}", secretSantaPerson.getName(), secretSantaPerson.getGivesTo().getName());
+//                log.info("\t{} gives to {}", secretSantaPerson.getName(), secretSantaPerson.getGivesTo().getName());
             }
             customMailSender.sendEmailToGroup(secretSantaGroup);
         }
