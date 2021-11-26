@@ -29,4 +29,14 @@ public class Controller {
         return groupService.getAll();
     }
 
+    @PostMapping("/fix")
+    public void fixRelation() {
+        groupService.fixRelation();
+    }
+
+    @PostMapping("/celebrate")
+    public void celebrate() throws Exception {
+        groupService.celebrate(null);
+    }
+
 }

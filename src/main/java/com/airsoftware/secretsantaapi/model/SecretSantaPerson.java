@@ -3,14 +3,12 @@ package com.airsoftware.secretsantaapi.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
-@ToString
 public class SecretSantaPerson {
 
     @Id
@@ -22,5 +20,9 @@ public class SecretSantaPerson {
     @ManyToOne
     @JsonIgnoreProperties(value = {"members"}, allowSetters = true)
     private SecretSantaGroup group;
+
+    @OneToOne
+    @JsonIgnoreProperties(value = {"givesTo"}, allowSetters = true)
+    private SecretSantaPerson givesTo;
 
 }
