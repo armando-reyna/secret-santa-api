@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: local
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  mail:
+    cc: armando@airsoftware.com.mx,eduardo@airsoftware.com.mx
+    templates: "classpath:templates/mail/"
+    username: donotreply@airsoftware.solutions
+    password: 41rs0ftw4r3#s0lut10n
+    port: 587
+    host: smtp.1and1.com
+    properties:
+      mail:
+        transport:
+          protocol: smpt
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: false
+
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG

@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/airsoftware?useSSL=false
+    username: root
+    password: hell0Th3rE#2021
+server:
+  port: 8082
